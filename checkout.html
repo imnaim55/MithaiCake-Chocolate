@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mithai Cake and Chocolate</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <!-- Include QRCode Library -->
+    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.4.4/build/qrcode.min.js"></script>
+</head>
+
+
+<body>
+
+
+    <!-- header section start -->
+    <section id="header" class="section-p1">
+        <a href="#"><img src="logo1.png" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+                <li id="user"><a href="userlogin.html"><i class="fa-solid fa-user"></i></a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-store"></i></a></li>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a><a href="userlogin.html"><i class="fa-solid fa-user"></i></a></a>
+            <a href="cart.html"><i class="fa-solid fa-store"></i></a>
+            <i id="bar" class="fa-solid fa-bars"></i>
+        </div>
+    </section>
+    <!-- header section end -->
+
+
+    <!-- checkout section start -->
+    <section id="checkout" class="section-p1">
+        <h2>Checkout - Payment</h2>
+        <p style="text-align:center;">Complete your payment for the selected products!</p>
+    </section>
+    <!-- checkout section end -->
+
+
+    <!-- payment section start -->
+    <section id="payment" class="section-p1">
+        <form id="paymentForm">
+            <!-- Delivery Address Section -->
+            <div class="delivery-address">
+                <h3>Delivery Address</h3>
+
+                <label for="addressLine1">Address Line 1</label>
+                <input type="text" id="addressLine1" name="addressLine1" placeholder="Enter address line 1" required>
+
+                <label for="addressLine2">Address Line 2</label>
+                <input type="text" id="addressLine2" name="addressLine2" placeholder="Enter address line 2 (optional)">
+
+                <label for="state">State</label>
+                <select id="state" name="state" required>
+                    <option value="West Bengal">West Bengal</option>
+                </select>
+
+                <label for="zipcode">Zip Code</label>
+                <input type="text" id="zipcode" name="zipcode" placeholder="Enter zip code" required>
+
+                <label for="country">Country</label>
+                <select id="country" name="country" required>
+                    <option value="India">India</option>
+                </select>
+
+                <p>OR</p>
+                <button type="button" id="detectLocationButton">Detect My Location (GPS)</button>
+                <p id="gpsAddress" style="margin-top: 1rem;"></p> <!-- Display GPS Address -->
+            </div>
+
+            <!-- Payment Method Section -->
+            <div class="payment-method">
+                <h3>Select Payment Method</h3>
+                <label>
+                    <input type="radio" name="paymentMethod" value="cod" checked>
+                    Cash on Delivery
+                </label><br>
+                <label>
+                    <input type="radio" name="paymentMethod" value="card">
+                    Credit/Debit Card
+                </label><br>
+                <label>
+                    <input type="radio" name="paymentMethod" value="upi">
+                    UPI
+                </label>
+            </div>
+
+            <!-- Card Payment Section -->
+            <div id="cardDetails" style="display:none;">
+                <h3>Enter Card Details</h3>
+                <label for="cardName">Cardholder Name</label>
+                <input type="text" id="cardName" name="cardName" placeholder="Enter cardholder name" required>
+
+                <label for="cardNumber">Card Number</label>
+                <input type="text" id="cardNumber" name="cardNumber" placeholder="1234 5678 9123 4567" required>
+
+                <label for="expDate">Expiry Date</label>
+                <input type="month" id="expDate" name="expDate" required>
+
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="123" required>
+            </div>
+
+            <!-- UPI Payment Section -->
+            <div id="upiDetails" style="display:none;">
+                <h3>Scan QR Code to Pay via UPI</h3>
+                <div id="qrCodeContainer"></div>
+            </div>
+
+            <div id="totalAmount">
+                <h3>Total Amount</h3>
+                <p><strong id="cartTotalFinal">₹0</strong></p>
+            </div>
+
+            <button type="submit" class="bt">Pay Now</button>
+        </form>
+    </section>
+    <!-- payment section end -->
+
+   
+    <!-- news letter section start -->
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign Up for Newsletters</h4>
+            <p>Get E-Mail updates about our latest shop and <span>Special offers</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your email address">
+            <button class="normal" onclick="window.location.href='userlogin.html'">Sign Up</button>
+        </div>
+    </section>
+    <!-- news letter section end -->
+
+
+    <!-- footer section start  -->
+    <footer class="section-p1">
+        <div class="col">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> Doltala more, Mmadhyamgram, north 24 parganas, west bengal-700132 </p>
+            <P><strong>Phone:</strong> +91 9874984121</P>
+            <P><strong>E-mail:</strong> naimshaikh14012001@gmail.com</P>
+            <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-x"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#" onclick="window.location.href='about.html'">About us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#" onclick="window.location.href='contact.html'">Contact Us</a>
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#" onclick="window.location.href='userlogin.html'">Sign In</a>
+            <a href="#" onclick="window.location.href='cart.html'">View Cart</a>
+            <a href="#" onclick="window.location.href='cart.html'">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="col Install">
+            <h4>Install App</h4>
+            <p>From App store or Google Play</p>
+            <div class="row" style="display: flex;">
+                <img src="googleplay (2).png" alt="" style="width: 150px;">
+                <img src="apple2.png" alt="" style="width: 150px;">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="pay.png" alt="" style="width: 250px;">
+
+        </div>
+
+        <div class="copyright">
+            <p>ⓒ 2024, Naim Sk etc - HTML CSS Ecommerce Template</p>
+        </div>
+    </footer>
+    <!-- footer section end  -->
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
