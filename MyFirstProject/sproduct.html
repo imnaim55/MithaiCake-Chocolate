@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mithai Cake and Chocolate</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+
+    <!-- header section start  -->
+    <section id="header">
+        <a href="#"><img src="logo1.png" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+                <li id="user" class="dropdown">
+                    <a href="#"><i class="fa-solid fa-user"></i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="userlogin.html">Customer Login</a></li>
+                        <li><a href="adminlogin.html">Admin Login</a></li>
+                    </ul>
+                </li>
+                <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-store"></i></a></li>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a><a href="userlogin.html"><i class="fa-solid fa-user"></i></a></a>
+            <a href="cart.html"><i class="fa-solid fa-store"></i></a>
+            <i id="bar" class="fa-solid fa-bars"></i>
+        </div>
+    </section>
+    <!-- header section end  -->
+
+
+    <!-- product details section start -->
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <img id="product-image" width="100%" alt="Product Image">
+        </div>
+        <div class="single-pro-details">
+            <h4 id="product-name"></h4>
+            <h2 id="product-price"></h2>
+            <select id="flavour">
+                <option>Select Flavour</option>
+                <option>Chocolate</option>
+                <option>Butter Scotch</option>
+                <option>Strawberry</option>
+                <option>Black Forest</option>
+                <option>White Forest</option>
+            </select>
+            <select id="size">
+                <option>Select Size</option>
+                <option>1Kg</option>
+                <option>1.5kg</option>
+                <option>2Kg</option>
+                <option>2.5Kg</option>
+                <option>3Kg</option>
+                <option>3.5Kg</option>
+            </select>
+            <button class="normal" id="add-to-cart-btn">Add To Cart</button>
+            <h4>Product Details</h4>
+            <span id="product-description"></span>
+        </div>
+    </section>
+    <!-- product details section end -->
+
+
+    <!-- product section start -->
+    <section id="product1" class="section-p1">
+        <h2>Similar Design Available</h2>
+        <p>Birthday Cake Collection</p>
+        <div class="pro-container">
+            <!-- Repeat this block for each product -->
+            <div class="pro" onclick="window.location.href='sproduct.html?product=1';">
+                <img src="Cake Images/pro1.jpg" alt="Cake Image">
+                <div class="des">
+                    <span>Strawbeery</span>
+                    <h5>Butterfly Theme Cake</h5>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>₹499</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+            </div>
+            <div class="pro" onclick="window.location.href='sproduct.html?product=2';">
+                <img src="Cake Images/pro2.jpg" alt="Cake Image">
+                <div class="des">
+                    <span>Vanilla</span>
+                    <h5>Flower Theme Cake</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹450</h4>
+                </div>
+                <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro" onclick="window.location.href='sproduct.html?product=3';">
+                <img src="Cake Images/pro3.jpg" alt="Cake Image">
+                <div class="des">
+                    <span>Vanilla</span>
+                    <h5>Anniversary Cake</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹550</h4>
+                </div>
+                <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro" onclick="window.location.href='sproduct.html?product=4';">
+                <img src="Cake Images/pro4.jpg" alt="Cake Image">
+                <div class="des">
+                    <span>Blue Berry</span>
+                    <h5>Celebration Cake</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹395</h4>
+                </div>
+                <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro" onclick="window.location.href='sproduct.html?product=5';">
+                <img src="Cake Images/pro5.jpg" alt="Cake Image">
+                <div class="des">
+                    <span>Chocolate</span>
+                    <h5>Fresh Chocolate & Berrys</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹599</h4>
+                </div>
+                <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro" onclick="window.location.href='sproduct.html?product=6';">
+                <img src="Cake Images/pro6.jpg" alt="Cake Image">
+                <div class="des">
+                    <span>Blue Berry</span>
+                    <h5>Birthday Cake</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹425</h4>
+                </div>
+                <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro" onclick="window.location.href='sproduct.html?product=7';">
+                <img src="Cake Images/pro7.jpg" alt="Cake Image">
+                <div class="des">
+                    <span>White Chocolate</span>
+                    <h5>Celebration Cake</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹600</h4>
+                </div>
+                <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro" onclick="window.location.href='sproduct.html?product=8';">
+                <img src="Cake Images/pro8.jpg" alt="Cake Image">
+                <div class="des">
+                    <span>Chocolate</span>
+                    <h5>Birthday Cake</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹525</h4>
+                </div>
+                <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro" onclick="window.location.href='sproduct.html?product=9';">
+                <img src="Cake Images/pro9.jpg" alt="Cake Image">
+                <div class="des">
+                    <span>Vanilla</span>
+                    <h5>Rainbow Theme Cake</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹550</h4>
+                </div>
+                <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+            </div>
+            <!-- Add more product blocks -->
+        </div>
+    </section>
+    <!-- product section end -->
+
+
+    <!-- news letter section start -->
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign Up for Newsletters</h4>
+            <p>Get E-Mail updates about our latest shop and <span>Special offers</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your email address">
+            <button class="normal" onclick="window.location.href='userlogin.html'">Sign Up</button>
+        </div>
+    </section>
+    <!-- news letter section end -->
+
+
+    <!-- footer section start  -->
+    <footer class="section-p1">
+        <div class="col">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> Doltala more, Mmadhyamgram, north 24 parganas, west bengal-700132 </p>
+            <P><strong>Phone:</strong> +91 9874984121</P>
+            <P><strong>E-mail:</strong> naimshaikh14012001@gmail.com</P>
+            <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-x"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#" onclick="window.location.href='about.html'">About us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#" onclick="window.location.href='contact.html'">Contact Us</a>
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#" onclick="window.location.href='userlogin.html'">Sign In</a>
+            <a href="#" onclick="window.location.href='cart.html'">View Cart</a>
+            <a href="#" onclick="window.location.href='cart.html'">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="col Install">
+            <h4>Install App</h4>
+            <p>From App store or Google Play</p>
+            <div class="row" style="display: flex;">
+                <img src="googleplay (2).png" alt="" style="width: 150px;">
+                <img src="apple2.png" alt="" style="width: 150px;">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="pay.png" alt="" style="width: 250px;">
+
+        </div>
+
+        <div class="copyright">
+            <p>ⓒ 2024, Naim Sk etc - HTML CSS Ecommerce Template</p>
+        </div>
+    </footer>
+    <!-- footer section end  -->
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const products = {
+                1: {
+                    image: 'Cake Images/pro1.jpg',
+                    name: 'Butterfly Theme Cake',
+                    price: 499,
+                    description: 'Delicate and enchanting, our butterfly-themed cake is a true work of art...'
+                },
+                2: {
+                    image: 'Cake Images/pro2.jpg',
+                    name: 'Flower Theme Cake',
+                    price: 450,
+                    description: 'Our flower theme cake is a beautiful and delicious creation...'
+                },
+                3: {
+                    image: 'Cake Images/pro3.jpg',
+                    name: 'Anniversary Cake',
+                    price: 550,
+                    description: 'Celebrate love and commitment with our exquisite anniversary cake...'
+                },
+                4: {
+                    image: 'Cake Images/pro4.jpg',
+                    name: 'Celebration Cake',
+                    price: 395,
+                    description: 'Our celebration cake is perfect for any joyful occasion...'
+                },
+                5: {
+                    image: 'Cake Images/pro5.jpg',
+                    name: 'Fresh Chocolatem & Berrys',
+                    price: 599,
+                    description: 'Our celebration cake is perfect for any joyful occasion...'
+                },
+                6: {
+                    image: 'Cake Images/Cakepro6.jpg',
+                    name: 'Birthday Cake',
+                    price: 425,
+                    description: 'Our celebration cake is perfect for any joyful occasion...'
+                },
+                7: {
+                    image: 'Cake Images/pro7.jpg',
+                    name: 'Celebration Cake',
+                    price: 600,
+                    description: 'Our celebration cake is perfect for any joyful occasion...'
+                },
+                8: {
+                    image: 'Cake Images/pro8.jpg',
+                    name: 'Birthday Cake',
+                    price: 525,
+                    description: 'Our celebration cake is perfect for any joyful occasion...'
+                },
+                9: {
+                    image: 'Cake Images/pro9.jpg',
+                    name: 'Rainbow Theme Cake',
+                    price: 550,
+                    description: 'Our celebration cake is perfect for any joyful occasion...'
+                },
+                10: {
+                    image: 'Cake Images/pro1.jpg',
+                    name: 'Butterfly Theme Cake',
+                    price: 499,
+                    description: 'Delicate and enchanting, our butterfly-themed cake is a true work of art...'
+                },
+                11: {
+                    image: 'Cake Images/pro2.jpg',
+                    name: 'Flower Theme Cake',
+                    price: 450,
+                    description: 'Our flower theme cake is a beautiful and delicious creation...'
+                },
+                12: {
+                    image: 'Cake Images/pro3.jpg',
+                    name: 'Anniversary Cake',
+                    price: 550,
+                    description: 'Celebrate love and commitment with our exquisite anniversary cake...'
+                },
+                13: {
+                    image: 'Cake Images/pro4.jpg',
+                    name: 'Celebration Cake',
+                    price: 395,
+                    description: 'Our celebration cake is perfect for any joyful occasion...'
+                },
+                14: {
+                    image: 'Cake Images/pro5.jpg',
+                    name: 'Fresh Chocolatem & Berrys',
+                    price: 599,
+                    description: 'Our celebration cake is perfect for any joyful occasion...'
+                },
+                15: {
+                    image: 'Cake Images/Cakepro6.jpg',
+                    name: 'Birthday Cake',
+                    price: 425,
+                    description: 'Our celebration cake is perfect for any joyful occasion...'
+                },
+                16: {
+                    image: 'Cake Images/pro7.jpg',
+                    name: 'Celebration Cake',
+                    price: 600,
+                    description: 'Our celebration cake is perfect for any joyful occasion...'
+                },
+                17: {
+                    image: 'Cake Images/pro8.jpg',
+                    name: 'Birthday Cake',
+                    price: 525,
+                    description: 'Our celebration cake is perfect for any joyful occasion...'
+                },
+                18: {
+                    image: 'Cake Images/pro9.jpg',
+                    name: 'Rainbow Theme Cake',
+                    price: 550,
+                    description: 'Our celebration cake is perfect for any joyful occasion...'
+                },
+            };
+
+            const urlParams = new URLSearchParams(window.location.search);
+            const productId = urlParams.get('product');
+
+            if (productId && products[productId]) {
+                const product = products[productId];
+                document.getElementById('product-image').src = product.image;
+                document.getElementById('product-name').textContent = product.name;
+                document.getElementById('product-price').textContent = `₹${product.price}`;
+                document.getElementById('product-description').textContent = product.description;
+
+                document.getElementById('add-to-cart-btn').addEventListener('click', function () {
+                    addToCart(product.name, product.price, product.image);
+                });
+            } else {
+                document.getElementById('prodetails').innerHTML = '<p>Product not found.</p>';
+            }
+        });
+
+        function addToCart(name, price, image) {
+            const flavour = document.getElementById('flavour').value;
+            const size = document.getElementById('size').value;
+            const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+
+            // Ensure price is a number  
+            const newItem = {
+                name,
+                price,
+                image,
+                flavour,
+                size,
+                quantity: 1
+            };
+
+            cartItems.push(newItem);
+            localStorage.setItem('cartItems', JSON.stringify(cartItems));
+            alert('Item added to cart!');
+        }  
+    </script>
+
+    
+    <script src="script.js"></script>
+
+</body>
+
+</html>
